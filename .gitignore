@@ -1,0 +1,13 @@
+# VS Code settings stored locally
+.vscode/
+
+# Python-generated cache files
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+venv/
+
+# Generated project log
+student_analysis.log
