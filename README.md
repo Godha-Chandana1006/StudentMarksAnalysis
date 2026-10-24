@@ -138,4 +138,6 @@ The project uses Python's "logging" module to record important events and errors
 ## Author
  
 Python Learner
+
+
 This project demonstrates my practical skills in Python, Pandas, data visualization
