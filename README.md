@@ -106,10 +106,15 @@ The program displays student marks, averages, results, class pass percentage, cl
 Example of the output format:
 
 Student Marks and Results:
+
   Student  Python  Maths  English  Average Result
+   
 0     Anu      85     90       80    85.00   Pass
+
 1    Ravi      70     75       80    75.00   Pass
+
 2   Priya      95     92       90    92.33   Pass
+
 3   Kiran      60     65       70    65.00   Pass
 
 Class Pass Percentage: 100.00%
