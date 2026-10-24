@@ -4,7 +4,9 @@ import pandas as pd
 from analysis import (
     calculate_averages,
     get_subject_averages,
-    get_top_student
+    get_top_student,
+    assign_grades,
+    calculate_results
 )
 from visualization import plot_student_averages
 
@@ -21,8 +23,14 @@ def main():
         if not all(column in df.columns for column in required_columns):
             raise ValueError("CSV is missing one or more required columns.")
         df = calculate_averages(df)
-        print("Student Marks and Averages:")
-        print(df[["Student", "Python", "Maths", "English", "Average"]].round(2))
+        df = assign_grades(df)
+        df,pass_percentage = calculate_results(df) 
+        print("Student Marks and Results:")
+        print(df[["Student", "Python", "Maths", "English", "Average","Result"]].round(2))
+        print("\n Class Pass/Fail Results:")
+        print(df[["Student", "Result"]])
+        print(f"\nClass Pass Percentage: {pass_percentage:.2f}%")
+        print(f"Class Fail Percentage: {100 - pass_percentage:.2f}%")
         print("\nSubject Averages:")
         print(get_subject_averages(df).round(2))
         print("\nTop Student:")
