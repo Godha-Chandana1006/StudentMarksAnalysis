@@ -28,7 +28,6 @@ A Python-based data analysis project that analyzes student marks using Pandas, N
 ## Project Structure
 
 StudentMarksAnalysis/
-│
 
 ├── main.py
 
@@ -117,15 +116,15 @@ Example of the output format:
 
 Student Marks and Results:
 
-  Student  Python  Maths  English  Average Result
+  Student    Python    Maths    English    Average   Result
    
-0     Anu      85     90       80    85.00   Pass
+0     Anu        85       90         80      85.00     Pass
 
-1    Ravi      70     75       80    75.00   Pass
+1    Ravi        70       75         80      75.00     Pass
 
-2   Priya      95     92       90    92.33   Pass
+2   Priya        95       92         90      92.33     Pass
 
-3   Kiran      60     65       70    65.00   Pass
+3   Kiran        60       65         70      65.00     Pass
 
 Class Pass Percentage: 100.00%
 Class Fail Percentage: 0.00%
